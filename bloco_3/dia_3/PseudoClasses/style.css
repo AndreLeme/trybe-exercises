@@ -1,0 +1,48 @@
+div:hover {
+  border-style: solid;
+  transition: 300ms;
+}
+
+.primaria {
+  background-color: red;
+}
+
+.secundaria {
+  background-color: orange;
+}
+
+.complementar {
+  background-color: green;
+  line-height: 2em;
+}
+
+.escura {
+  background-color: darkmagenta;
+}
+
+.clara {
+  background-color: lightblue;
+}
+
+.hPrimaria {
+  font-style: italic;
+  color: lime;
+}
+
+.hSecundaria {
+  color: blue;
+}
+
+.hComplementar {
+  font-style: italic;
+  color: orange;
+}
+
+.hEscura {
+  color: lightgreen;
+}
+
+.hClara {
+  font-style: italic;
+  color: red;
+}
