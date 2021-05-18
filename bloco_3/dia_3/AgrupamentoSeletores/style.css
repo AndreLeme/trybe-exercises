@@ -1,0 +1,17 @@
+h1, p {
+  text-align: center;
+}
+
+li:hover {
+  background-color: orange;
+  transition: 175ms;
+}
+
+li:active {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: 175ms;
+}
+
+ol, ul {
+  list-style: none;
+}

@@ -1,0 +1,23 @@
+.word {
+  position: relative;  
+  top: 105px;
+  left: 65px;            
+}
+
+.fala {
+    position: absolute;
+    top: 1200px;
+    left: 950px;
+    z-index: 1;
+}
+
+
+.bowser{
+    position: absolute;
+    top: 1300px;
+    left: 1150px
+}
+
+
+
+
