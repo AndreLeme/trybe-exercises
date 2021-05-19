@@ -9,5 +9,4 @@ birthYear = 2030
 console.log(birthYear);
 
 birthCity = "Cafundó"
-console.log(birthCity)
-
+console.log(birthCity);
