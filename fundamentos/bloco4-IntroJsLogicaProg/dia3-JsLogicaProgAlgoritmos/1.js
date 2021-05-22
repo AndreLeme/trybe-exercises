@@ -1,20 +1,21 @@
-let linhas = 2;
+let n = 10;
 let asteriscos = "**";
 
-//[REQUISITO do exercicio] Verificar se n > 1
-if (linhas > 1) {
+// [REQUISITO do exercicio] Primeiro verificar se n > 1
+if (n > 1) {
 
-  //Se linhas > 2 adicionar asteriscos equivalentes as linhas
-  if (linhas > 2) {
-    for (let totalAsteriscos = 3; totalAsteriscos <= linhas; totalAsteriscos +=1){
+  // Se (n > 2) adicionar asteriscos equivalentes as linhas
+  if (n > 2) {
+    for (let totalAsteriscos = 3; totalAsteriscos <= n; totalAsteriscos += 1){
       asteriscos += `*`
     };
   };
   
-  //imprimir as linhas  
-  for (let i = 1; i <= linhas; i += 1) {
+  // Imprimir as linhas
+  for (let linhas = 1; linhas <= n; linhas += 1) {
     console.log(`${asteriscos}`);      
-  };    
+  };
+ 
 } else {
   console.log(`Número de linhas tem que ser maior que 1`);
 };
