@@ -1,11 +1,12 @@
 let n = 10;
-let asteriscos = "**";
 
 // [REQUISITO do exercicio] Primeiro verificar se n > 1
 if (n > 1) {
+  let asteriscos = "**";
 
   // Se (n > 2) adicionar asteriscos equivalentes as linhas
   if (n > 2) {
+    
     for (let totalAsteriscos = 3; totalAsteriscos <= n; totalAsteriscos += 1){
       asteriscos += `*`
     };
