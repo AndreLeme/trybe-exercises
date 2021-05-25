@@ -21,4 +21,4 @@ for (key in info) {
   } else {
     console.log(`${info[key]} e ${info2[key]}`);
   }
-}
+};

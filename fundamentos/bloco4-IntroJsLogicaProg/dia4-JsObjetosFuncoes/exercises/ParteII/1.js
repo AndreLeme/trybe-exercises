@@ -1,4 +1,4 @@
-function palindromo (palavra) {
+function palindromo(palavra) {
   let contrario = palavra.split("").reverse().join("");
   if (contrario === palavra) {
     return true;
