@@ -1,0 +1,34 @@
+<div id="paiDoPai">
+  <div id="pai">
+    <div id="primeiroFilho"></div>
+    <div id="elementoOndeVoceEsta">
+      <div id="primeiroFilhoDoFilho"></div>
+      <div id="segundoEUltimoFilhoDoFilho"></div>
+    </div>
+    Atenção!
+    <div id="terceiroFilho"></div>
+    <div id="quartoEUltimoFilho"></div>
+  </div>
+</div>
+<script>
+  // 1
+  const elementoOndeVoceEsta = document.getElementById("elementoOndeVoceEsta");
+
+  // 2
+  const pai = elementoOndeVoceEsta.parentElement;
+  pai.style.color = "red";
+
+  // 3
+  const primeiroFilhoDoFilho = elementoOndeVoceEsta.firstChild;
+  primeiroFilhoDoFilho.innerText = 'Texto';
+
+  // 4
+  document.getElementById('pai').firstChild;
+
+  // 5
+  document.getElementById("elementoOndeVoceEsta").firstChild;
+
+  // 6
+  document.getElementById("elementoOndeVoceEsta").  
+
+</script>
