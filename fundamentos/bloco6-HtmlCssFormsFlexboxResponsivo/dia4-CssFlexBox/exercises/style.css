@@ -26,11 +26,16 @@ body {
   order: -1;
 }
 
-/* 3) Adicione uma propriedade Flexbox que modifique o tamanho padrão do container do menu quando a largura da página for maior que 768px. */
+/*
+  3) Adicione uma propriedade Flexbox que modifique o tamanho padrão do container do menu quando a largura da página for maior que 768px.
+  
+  4) Utilize a propriedade align-self no elemento correto
+*/
 .menu-container {
   display: flex;
   flex-basis: 500px;
   min-width: 768px;
+  align-self: center;
 }
 
 
