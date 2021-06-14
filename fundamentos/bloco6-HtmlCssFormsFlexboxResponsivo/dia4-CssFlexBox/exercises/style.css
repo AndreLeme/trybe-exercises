@@ -33,8 +33,7 @@ body {
 */
 .menu-container {
   display: flex;
-  flex-basis: 500px;
-  min-width: 768px;
+  flex: 1 500px;
   align-self: center;
 }
 
