@@ -79,6 +79,7 @@ body {
   justify-content: space-around;
 }
 
+/* 5) Adicione uma propriedade com o valor 1 que faça com que suas div do container de filmes ocupe todo o espaço em branco */
 .card-container div {
   align-items: center;
   background-color: #5C687C;
@@ -87,7 +88,7 @@ body {
   height: 150px;
   justify-content: center;
   margin: 10px;
-  flex-basis: 16%;
+  flex: 1 16%;
 }
 
 /* 
