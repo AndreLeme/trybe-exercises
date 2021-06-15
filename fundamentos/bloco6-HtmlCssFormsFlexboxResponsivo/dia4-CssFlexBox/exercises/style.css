@@ -57,11 +57,15 @@ body {
   flex-wrap: wrap;
 }
 
-/* 3) Adicione uma propriedade que faça com que seu container de filmes tenha uma base de 700px e outra base de 16% para as div do container de seu card */
+/* 
+  3) Adicione uma propriedade que faça com que seu container de filmes tenha uma base de 700px e outra base de 16% para as div do container de seu card 
+  
+  4) Aplique uma propriedade com o valor 10 que expanda o container de filmes
+*/
 .movie-container {
   display: flex;
   flex-direction: column;
-  flex-basis: 700px;
+  flex: 10 700px;
 }
 
 .movie-container h2 {
@@ -96,9 +100,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: 20px;
-  flex-basis: 350px;
   align-self: center;
-  flex: 1;
+  flex: 1 350px;
 }
 
 .aside-container h3, h4 {
