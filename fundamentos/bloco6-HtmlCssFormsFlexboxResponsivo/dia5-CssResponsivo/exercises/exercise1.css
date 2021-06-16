@@ -36,11 +36,28 @@ figure {
 
   h2 {
     font-size: large;
-    flex-basis: 51%;
+    flex: 51%;
   }
 
   figure {
     flex-basis: 50%;
     margin: 40px 0;
   }
+}
+
+@media screen and (min-width: 1020px) {
+  body {
+    background-color: chocolate;
+    max-width: 913px;
+  }
+
+  h1 {
+    font-size: large; 
+  }
+
+  h2 {
+    font-size: larger;
+    flex-basis: 51%;
+  }
+
 }
