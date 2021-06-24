@@ -11,14 +11,7 @@ const newEmployees = (pessoa) => {
 
 const novaPessoaContratada = (nomeCompleto) => {
   const email = `${nomeCompleto.toLowerCase().replace(/ /g, '_')}@trybe.com`;
-  const pessoa = {
-    nomeCompleto: nomeCompleto,
-    email: email,
-  }
-  return pessoa;
+  return {nomeCompleto, email};
 }
 
-// console.log(novaPessoaContratada('Pedro Guerra'));
-
 console.log(newEmployees(novaPessoaContratada));
-
