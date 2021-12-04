@@ -1,0 +1,38 @@
+h1 {
+    font-family: sans-serif;
+    font-size: 65px;
+    color: orange;
+    text-decoration: greenyellow;
+}
+
+#ul {
+    background-color: green;
+    font-style: oblique;
+    line-height: 20px;
+}
+
+.corFundoTags {
+    background-color: orangered;
+}
+
+p {
+    font-size: 3em;
+    font-weight: 600;
+    
+}
+
+body {
+    font-size: 16px;
+}
+
+#amarelo {
+  color: yellow;
+}
+
+#vermelho {
+  color: red;
+}
+
+#marrom {
+  color: brown;
+}
