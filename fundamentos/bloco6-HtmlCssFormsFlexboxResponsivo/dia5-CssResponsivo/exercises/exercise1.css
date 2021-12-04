@@ -1,0 +1,62 @@
+body {
+  font-size: larger;
+  margin: 30px;
+}
+
+h1 {
+  font-size: xx-large; 
+}
+
+h2 {
+  font-size: x-large
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 70px 0;
+}
+
+@media screen and (min-width: 535px) {
+  body {
+    background-color: chartreuse;
+    font-size: medium;
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+
+  h2 {
+    font-size: large;
+    flex: 51%;
+  }
+
+  figure {
+    flex-basis: 50%;
+    margin: 40px 0;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  body {
+    background-color: chocolate;
+    max-width: 913px;
+  }
+
+  h1 {
+    font-size: large; 
+  }
+
+  h2 {
+    font-size: larger;
+    flex-basis: 51%;
+  }
+}
