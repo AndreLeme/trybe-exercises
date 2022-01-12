@@ -1,6 +1,9 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 
 const app = express(); // 1
+
+app.use(bodyParser.json());
 
 // app.get('/hello', handleHelloWorldRequest); // 2
 
@@ -60,6 +63,12 @@ app.get('/drinks', (req, res) => {
   res.json(sortedDrinks);
 });
 
+app.get('/recipes/search', (req, res) => { // FALTA FAZER fixar do Query String em diante
+  const { name, maxPrice } = req.query; 
+  const filteredRecipes = recipes.filter((r) => r.name.includes(name) && r.price < parseInt(maxPrice));
+  res.status(200).json(filteredRecipes);
+});
+
 app.get('/recipes/:id', (req, res) => {
   const { id } = req.params;
   const recipe = recipes.find((r) => r.id === parseInt(id));
@@ -69,6 +78,7 @@ app.get('/recipes/:id', (req, res) => {
   res.status(200).json(recipe);
 });
 
+
 app.get('/drink/:id', (req, res) => {
   const { id } = req.params;
   const drink = drinks.find((d) => d.id === parseInt(id));
@@ -76,4 +86,17 @@ app.get('/drink/:id', (req, res) => {
   if (!drink) return res.status(404).json({ message: 'Drink not found!' });
 
   res.status(200).json(drink);
+});
+
+app.post('/recipes', (req, res) => {
+  const { id, name, price } = req.body;
+  recipes.push({ id, name, price });
+  res.status(201).json({ message: 'Recipe created sucessfully!'});
+});
+
+app.get('/validateToken', (req, res) => {
+  const token = req.headers.authorization;
+  if (token.length !== 16) return res.status(401).json({ message: 'Invalid Token!'});
+
+  res.status(200).json({ message: 'Valid Token!'});
 });
