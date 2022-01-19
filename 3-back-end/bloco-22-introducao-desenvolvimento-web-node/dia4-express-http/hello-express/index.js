@@ -1,8 +1,11 @@
 const express = require('express');
 const rescue = require('express-rescue');
 const errorMiddleware = require('./errorMiddleware');
+const bodyParser = require('body-parser');
+const { verifiedEmail, verifiedPassword, verifiedUsername } = require('./register');
 
 const app = express();
+app.use(bodyParser.json());
 
 app.get('/:fileName', [
   rescue(async (req, res) => {
@@ -20,5 +23,13 @@ app.get('/:fileName', [
     return next(err);
   },
 ]);
+
+app.get(
+  './user/register',
+  verifiedEmail,
+  verifiedPassword,
+  verifiedUsername,
+  (_req, res) => res.status(201).json({ message: 'user created' }),
+);
 
 app.use(errorMiddleware);
