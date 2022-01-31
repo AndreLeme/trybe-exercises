@@ -1,6 +1,5 @@
 const sinon = require('sinon');
 const { expect } = require('chai');
-const res = require('express/lib/response');
 
 const MoviesService = require('../../services/movieService');
 const MoviesController =  require('../../controllers/movieController');
